@@ -13,14 +13,14 @@ source:
     - qwtconfig.pri.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - qt 
+    - qt 4.*
   run:
-    - qt
+    - qt 4.*
 
 test:
   commands:
