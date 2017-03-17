@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - qt 4.8.*
+    - toolchain
   run:
     - qt 4.8.*
 
