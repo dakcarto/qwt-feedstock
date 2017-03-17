@@ -3,7 +3,7 @@ About qwt
 
 Home: http://qwt.sourceforge.net/
 
-Package license: Qwt License, Version 1.0
+Package license: Qwt, Version 1.0
 
 Feedstock license: BSD 3-Clause
 
