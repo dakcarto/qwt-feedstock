@@ -17,7 +17,7 @@ source:
     - windows.patch
 
 build:
-  number: 0
+  number: 1
   features:
     - vc9  # [win and py27]
     - vc14  # [win and py>=35]
@@ -25,13 +25,13 @@ build:
 
 requirements:
   build:
-    - qt 4.8.*
+    - qt 5.6.*
     - toolchain  # [unix]
     - python  # [win]
     - vc 9  # [win and py27]
     - vc 14  # [win and py>=35]
   run:
-    - qt 4.8.*
+    - qt 5.6.*
     - vc 9  # [win and py27]
     - vc 14  # [win and py>=35]
 
