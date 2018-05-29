@@ -18,22 +18,17 @@ source:
 
 build:
   number: 1
-  features:
-    - vc9  # [win and py27]
-    - vc14  # [win and py>=35]
   skip: true  # [win and py36]
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - qt 5.6.*
-    - toolchain  # [unix]
+  host:
     - python  # [win]
-    - vc 9  # [win and py27]
-    - vc 14  # [win and py>=35]
   run:
     - qt 5.6.*
-    - vc 9  # [win and py27]
-    - vc 14  # [win and py>=35]
 
 test:
   requires:
@@ -57,3 +52,4 @@ extra:
   recipe-maintainers:
     - ceholden
     - jschueller
+    - marcelotrevisani
