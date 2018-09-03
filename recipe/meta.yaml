@@ -17,18 +17,18 @@ source:
     - windows.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win and py36]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - qt 5.6.*
+    - qt 5.9.*
   host:
     - python  # [win]
   run:
-    - qt 5.6.*
+    - qt 5.9.*
 
 test:
   requires:
@@ -41,10 +41,10 @@ test:
     - if not exist %PREFIX%\\Library\\lib\\qwt.lib exit 1  # [win]
 
 about:
-  home: http://qwt.sourceforge.net/ 
+  home: http://qwt.sourceforge.net/
   license: Qwt, Version 1.0
   license_file: COPYING
-  summary: Qt widgets for technical applications. 
+  summary: Qt widgets for technical applications.
   doc_url: http://qwt.sourceforge.net/
   dev_url: https://sourceforge.net/projects/qwt/
 
@@ -53,3 +53,4 @@ extra:
     - ceholden
     - jschueller
     - marcelotrevisani
+    - dakcarto
